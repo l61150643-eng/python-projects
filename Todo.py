@@ -21,7 +21,7 @@ def save_todos(todos):
     '''
     把内存中的待办列表保存到todo.txt
     '''
-    with open("todo.txt",mode="at",encoding="utf-8")as f:
+    with open("todo.txt",mode="wt",encoding="utf-8")as f:
         for todo in todos:
             f.write(f"{todo['content']}|{todo['status']}\n")
 
